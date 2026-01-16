@@ -250,9 +250,9 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0 20px;
   display: grid;
-  grid-template-columns: 1fr 450px;
+  grid-template-columns: 1fr 420px;
   gap: 60px;
-  align-items: center;
+  align-items: start;
 }
 
 /* Hero Content */
@@ -481,15 +481,16 @@ h1, h2, h3, h4, h5, h6 {
 /* Form Header */
 .form-header {
   background: var(--gradient-purple);
-  padding: 20px 25px;
+  padding: 16px 20px;
   position: relative;
 }
 
 .form-intro {
   color: var(--white);
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
   margin: 0;
+  line-height: 1.4;
 }
 
 .form-intro strong {
@@ -499,13 +500,14 @@ h1, h2, h3, h4, h5, h6 {
 /* Survey Embed Container */
 .survey-embed-container {
   padding: 0;
-  min-height: 520px;
+  min-height: 400px;
   background: var(--white);
 }
 
 .survey-embed-container iframe {
   width: 100%;
-  min-height: 520px;
+  min-height: 400px;
+  max-height: 500px;
   border: none;
   display: block;
 }
