@@ -5,7 +5,7 @@
 
 // MegaTag Configuration
 window.MEGA_TAG_CONFIG = {
-  siteKey: 'PENDING_SITE_KEY', // Update when URL is assigned
+  siteKey: 'sk_mkh60p43_31e1k5myxx8',
   gtmId: 'GTM-KL2XMJK3',
   gaId: null, // Add GA4 ID if available
   pixelId: null, // Add Meta Pixel ID if available
