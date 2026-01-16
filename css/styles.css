@@ -927,7 +927,7 @@ h1, h2, h3, h4, h5, h6 {
 ============================================= */
 .expertise-section {
   padding: var(--section-padding);
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 50%, #f8f9fa 100%);
+  background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 50%, #e9ecef 100%);
 }
 
 .expertise-list-centered {
@@ -1053,52 +1053,52 @@ h1, h2, h3, h4, h5, h6 {
 ============================================= */
 .about-doctor-section {
   padding: var(--section-padding);
-  background: linear-gradient(135deg, rgba(120, 83, 110, 0.03) 0%, rgba(217, 196, 158, 0.05) 50%, rgba(120, 83, 110, 0.03) 100%);
+  background: linear-gradient(135deg, rgba(120, 83, 110, 0.08) 0%, rgba(217, 196, 158, 0.12) 50%, rgba(120, 83, 110, 0.08) 100%);
 }
 
 .about-doctor-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 380px 1fr;
   gap: 60px;
-  align-items: start;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
 .about-doctor-image {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 20px 60px rgba(120, 83, 110, 0.2);
-  background: linear-gradient(135deg, rgba(120, 83, 110, 0.05) 0%, transparent 100%);
-  padding: 20px;
+  box-shadow: 0 20px 60px rgba(120, 83, 110, 0.25);
 }
 
 .about-doctor-image img {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px;
 }
 
 .about-image-badge {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
   background: var(--gradient-gold);
   color: var(--dark-navy);
-  padding: 12px 24px;
+  padding: 14px 28px;
   border-radius: 50px;
   display: flex;
   align-items: center;
   gap: 10px;
-  font-weight: 600;
-  font-size: 14px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  font-weight: 700;
+  font-size: 15px;
+  box-shadow: 0 8px 25px rgba(217, 196, 158, 0.4);
+  z-index: 2;
 }
 
 .about-image-badge svg {
-  width: 20px;
-  height: 20px;
+  width: 22px;
+  height: 22px;
 }
 
 .about-doctor-content .section-title {
@@ -1113,50 +1113,50 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .credentials-list {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
   margin-bottom: 40px;
 }
 
 .credential-item {
   display: flex;
-  gap: 18px;
-  padding: 20px;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.7) 100%);
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 100%);
   backdrop-filter: blur(10px);
   border-radius: 12px;
-  box-shadow: 0 3px 15px rgba(120, 83, 110, 0.08);
+  box-shadow: 0 3px 15px rgba(120, 83, 110, 0.1);
   transition: var(--transition);
-  border: 1px solid rgba(120, 83, 110, 0.1);
+  border: 1px solid rgba(120, 83, 110, 0.15);
 }
 
 .credential-item:hover {
-  transform: translateX(10px);
-  box-shadow: 0 8px 30px rgba(120, 83, 110, 0.15);
-  border-color: rgba(120, 83, 110, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(120, 83, 110, 0.2);
+  border-color: rgba(120, 83, 110, 0.25);
 }
 
 .credential-item svg {
-  width: 24px;
-  height: 24px;
+  width: 28px;
+  height: 28px;
   color: var(--primary-purple);
   flex-shrink: 0;
-  margin-top: 2px;
 }
 
 .credential-item strong {
   display: block;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
   color: var(--dark-navy);
   margin-bottom: 5px;
 }
 
 .credential-item p {
-  font-size: 14px;
+  font-size: 13px;
   color: var(--gray);
-  line-height: 1.6;
+  line-height: 1.5;
   margin: 0;
 }
 
