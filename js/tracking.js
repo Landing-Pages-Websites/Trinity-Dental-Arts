@@ -9,11 +9,7 @@ window.MEGA_TAG_CONFIG = {
   siteId: '893c5bc3-1820-4976-acc1-70cb104f6e3a',
   gtmId: 'GTM-KL2XMJK3',
   gaId: null, // Add GA4 ID if available
-  pixelId: null, // Add Meta Pixel ID if available
-  apiEndpoints: {
-    submission: 'https://analytics.gomega.ai/submission/submit',
-    tracking: 'https://analytics.gomega.ai/track'
-  }
+  pixelId: null // Add Meta Pixel ID if available
 };
 
 // Initialize tracking on page load
@@ -307,7 +303,7 @@ async function sendTrackingEvent(eventName, eventData) {
     };
 
     // Send to tracking endpoint (non-blocking)
-    fetch(window.MEGA_TAG_CONFIG.apiEndpoints.tracking, {
+    fetch(window.TRACKING_API_ENDPOINT + '/track', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
